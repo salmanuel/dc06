@@ -1,15 +1,15 @@
 <script setup>
-import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
+import Layout from '@/Layouts/Layout.vue';
 import { Head } from '@inertiajs/vue3';
 </script>
 
 <template>
     <Head title="Dashboard" />
 
-    <AuthenticatedLayout>
-        <template #header>
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">Dashboard</h2>
-        </template>
+    <Layout>
+        <div class="flex justify-between bg-gray-200">
+            <h2 class="font-bold text-4xl text-gray-800 ml-8 mt-4 mb-4">Dashboard</h2>
+        </div>
 
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -18,5 +18,5 @@ import { Head } from '@inertiajs/vue3';
                 </div>
             </div>
         </div>
-    </AuthenticatedLayout>
+    </Layout>
 </template>
